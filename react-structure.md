@@ -110,10 +110,14 @@ Resource path where we can place all our assets, colors, constants, dimens, env-
 
 Redux data that is shared in most or all screens.
 
-### **utils**
+### **src/utils**
 
 It holds all helpers and utils that are used in multiple screens and components.
 
 ### **src/views**
 
 All important screens/views in the project, each screen/view can have their own tests, contexts, hooks, store paths related to that the screen/view mainly, as well as, their own types.ts (only types that need to be exported), routes.ts, helpers.ts and styles.ts files. The idea here is having multiple sections under specific screens like tabs or steps (if applicable). If those tabs/steps have its own "sections", they may be a good fit to have its own space under views path. That way, we can keep the structure organised and prevent too deep and complex nested hierarchy.
+
+### test-utils
+
+Here we can place all settings and setup files needed for test libraries, such as Jest, React Testing Library, Enzyme and Cypress.
